@@ -18,24 +18,6 @@ contract MyContract {
 
 
 
-==============================================================================
-
-ABI(Application Binary Interface) FOR THIS PROGRAM
-:
-[
-	{
-		"constant": false,
-		"inputs": [
-			{
-				"name": "_value",
-				"type": "string"
-			}
-		],
-		"name": "set",
-		"outputs": [],
-		"payable": false,
-		"stateMutability": "nonpayable",
-		"type": "function"
 	},
 	{
 		"constant": true,
