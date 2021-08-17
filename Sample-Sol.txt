@@ -1,0 +1,60 @@
+pragma solidity ^0.4.24;
+
+contract MyContract {
+    string value;//a state variable
+    
+    function get() public view returns(string) {
+        return value;
+    }
+    
+    constructor() public {
+        value = "myValue";
+    }
+    
+    function set(string _value) public {
+        value = _value;
+    }
+}
+
+
+
+==============================================================================
+
+ABI(Application Binary Interface) FOR THIS PROGRAM
+:
+[
+	{
+		"constant": false,
+		"inputs": [
+			{
+				"name": "_value",
+				"type": "string"
+			}
+		],
+		"name": "set",
+		"outputs": [],
+		"payable": false,
+		"stateMutability": "nonpayable",
+		"type": "function"
+	},
+	{
+		"constant": true,
+		"inputs": [],
+		"name": "get",
+		"outputs": [
+			{
+				"name": "",
+				"type": "string"
+			}
+		],
+		"payable": false,
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"inputs": [],
+		"payable": false,
+		"stateMutability": "nonpayable",
+		"type": "constructor"
+	}
+]
